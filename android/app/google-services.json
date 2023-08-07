@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "84245951897",
+    "project_id": "convos-baf46",
+    "storage_bucket": "convos-baf46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84245951897:android:716c335874ace141bccf08",
+        "android_client_info": {
+          "package_name": "com.example.convos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84245951897-8enf5her1ol7k8s0tgiemi9kb27bp489.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7OfgkyDlWX3OcEdISQsP3Mp1GKtwkEQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84245951897-8enf5her1ol7k8s0tgiemi9kb27bp489.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "84245951897-j354bo8qc194vfd3q409mkus7qfcr501.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.convos"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
