@@ -26,7 +26,8 @@ class _hompageState extends State<hompage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("homepage"),
+        backgroundColor: Colors.black,
+        title: Text("CONVOS"),
         actions: [
           IconButton(onPressed: signouthere, icon: Icon(Icons.logout_outlined))
         ],
@@ -45,7 +46,7 @@ class _hompageState extends State<hompage> {
           return Text("error");
         }
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Text("loading.....");
+          return Center(child: Text("loading....."));
         }
         return ListView(
           children: snapshot.data!.docs
@@ -63,7 +64,7 @@ class _hompageState extends State<hompage> {
     //displaying all users except  current user
     if (authinstance.currentUser!.email != data['email']) {
       return ListTile(
-        title: Text(data["username"]),
+        title: Text(data["email"]),
         onTap: () {
           Navigator.of(context).push(
             MaterialPageRoute(

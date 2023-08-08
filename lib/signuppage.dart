@@ -20,9 +20,7 @@ class _signuppageState extends State<signuppage> {
 
   final authserviceinstance = authservice();
 
-  void signin() {
-    authserviceinstance.getusername = usercontroller.text;
-    
+  void signin() async {
     try {
       authserviceinstance.signupwithemail(
           emailcontroller.text, passwordcontroller.text);
@@ -32,6 +30,7 @@ class _signuppageState extends State<signuppage> {
         e.toString(),
       )));
     }
+      authserviceinstance.getusername = usercontroller.text ;
   }
 
   @override

@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 class authservice {
 ////////////////////////////////////
 //getting the username of person from sign in and storing it in firestore
-  var getusername = "";
+
+  String getusername = '';
 
 ///////////////////////////////////
   ////instance for auth
@@ -26,7 +27,7 @@ class authservice {
       firebasestore.collection('users').doc(usercreated.user!.uid).set({
         'uid': usercreated.user!.uid,
         'email': email,
-         'username':getusername,
+        'username': getusername,
         /* 'username':getusername, */
       });
 
@@ -51,11 +52,11 @@ class authservice {
         email: email,
         password: password,
       );
- //same for existing users and merging their data also , FIRESTORE
+      //same for existing users and merging their data also , FIRESTORE
       firebasestore.collection('users').doc(usercred.user!.uid).set({
         'uid': usercred.user!.uid,
         'email': email,
-        'username':getusername,
+        'username': getusername,
       }, SetOptions(merge: true));
 
       return usercred;
